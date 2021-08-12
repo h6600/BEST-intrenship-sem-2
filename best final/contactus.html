@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+
+<script>
+  var lblArray = [ 
+         
+         ["BEST UNDERTAKING -TECHNICAL TRAINING CENTER ,WADALA"   , "बेस्ट उपक्रम-टेक्निकल  ट्रेनिंग सेंटर, वडाळा"  , "lblheading"],
+         ["Contact Us"                                            , "आमच्याशी संपर्क साधा"                     , "lblcontact"],
+         ["Address: "                                             , "पत्ता:"                                  , "lbladd1"],
+         ["Technical Training Centre "                            , "तांत्रिक प्रशिक्षण केंद्र"                    , "lbladd2"],
+         ["Transportation Engineering Department "                , "परिवहन अभियांत्रिकी विभाग"                  , "lbladd3"],
+         ["B.E.S.& T. Undertaking "                               , "बी.ई.एस.टी. उपक्रम"                , "lbladd4"],
+         ["Wadala Bus Depot "                                     , "वडाळा बस डेपो"                           , "lbladd5"],
+         ["Mumbai-400031. "                                       , "मुंबई -400031."                           , "lbladd6"],
+         ["Email Id - ttcbestwadala@gmail.com "                   , "ईमेल आयडी - ttcbestwadala@gmail.com"    , "lbladd7"],
+         [" Contact Number : 022-24194255"                        , "संपर्क क्रमांक: 022-24194255"              , "lbladd8"],
+         [" Home"                                          , "मुख्य पृष्ठ "                 , "lblhome"],
+         [" Admin"                                         , " ऍडमिन"              , "lbladmin"],
+         [" login"                                         , "लॉगिन"                , "lbllogin"],
+         ["Information "                                   , "माहिती"            , "lblinfo"],
+         ["Guideline "                                     , "मार्गदर्शक सूचना"       , "lblgui"],
+         ["Advertisement "                                 , "जाहिरात"              , "lbladv"],
+         [" Contact Us"                                    , "संपर्क"              , "lblcs"],
+          ["Site is Developed & Maintained by Information Technology Department (Copyrights Reserved) Ver-1.1"                               
+          , "संकेतस्थळ निर्मिती व देखभाल : माहिती आणि तंत्रज्ञान विभाग ,बेस्ट उपक्रम (कॉपीराईटस राखीव) व्हर्जन - १.१"                   , "lblm16"],
+         [" "                                              , ""              , "lbl"],
+];
+
+ 
+function ChangeLang(appLanguage) {
+
+ if (appLanguage == 2)
+ 
+    {
+        for (ii = 0; ii < lblArray.length; ii++)
+        {
+            $("#" + lblArray[ii][2]).text(lblArray[ii][1]);
+        }
+    }    //If Marathi Lanuage selected
+    else
+    {
+        for (ii = 0; ii < lblArray.length; ii++)
+        {
+            $("#" + lblArray[ii][2]).text(lblArray[ii][0]);
+        }
+    }
+}
+
+</script>
+
+
+
+
+
+	<title>contact us</title>
+</head>
+<body>
+
+
+
+	 <div id="header">
+  <h1><label id="lblheading">BEST UNDERTAKING -TECHNICAL TRAINING CENTER ,WADALA</label></h1>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #9c2424;" id="rcorners2">
+
+  <a class="navbar-brand" href="home.html"><img src="BUS.png" height="50"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html"><label id="lblhome">Home </label><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="admin.html"><label id="lbladmin">Admin</label></a>
+      </li>
+       <li class="nav-item ">
+        <a class="nav-link" href="login.html"><label id="lbllogin">login</label></a>
+      </li>
+      <li class="nav-item dropdown ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <label id="lblinfo"> Information</label>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="guideline.html"> <label id="lblgui">Guideline</label></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="advertisement.html"> <label id="lbladv">Advertisement</label></a>
+          <div class="dropdown-divider"></div>
+          
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="contactus.html"><label id="lblcs">Contact Us</label></a>
+      </li>
+    </ul>
+
+
+<button  class="favorite styled"  onclick="ChangeLang(1)"> English </button>
+<button  class="favorite styled"type="button" onclick="ChangeLang(2)"> मराठी    </button>
+ 
+</div>
+</nav>
+
+
+
+<div class="container h-100" padding="10px" >
+    <div class="d-flex justify-content-center h-100">
+      <div class="user_card"  id="rcorners2" >
+        <div class="d-flex justify-content-center">
+          <div class="brand_logo_container">
+            <img src="BUS.PNG" class="brand_logo" alt="Logo">
+          </div>
+        </div><br><br><br><br><br><br><br><br>
+
+
+<div class="container h-100" id="rcorners2" style="background-color: white">
+
+        <p style="text-align: center;">
+     <b><label id="lbladd1">Address:</label></b><br>
+     <b><label id="lbladd2">Technical Training Centre</label></b><br>
+     <b><label id="lbladd3">Transportation Engineering Department</label></b><br>
+     <b><label id="lbladd4">B.E.S.& T. Undertaking</label></b><br>
+     <b><label id="lbladd5">Wadala Bus Depot</label></b><br>
+     <b><label id="lbladd6">Mumbai-400031.</label></b><br>
+     <b><label id="lbladd7">Email Id - ttcbestwadala@gmail.com</label></b><br>
+     <b><label id="lbladd8">Contact Number : 022-24194255</label></b>
+     <p>
+    </div>
+        <div class="d-flex justify-content-center form_container">
+          </div>
+          </div>
+    </div>
+  </div>
+
+<div class="footer">
+   <p style="text-align: center;"><label id="lblm16">Site is Developed & Maintained by Information Technology Department (Copyrights Reserved) Ver-1.1</label><br>
+Best Viewed in Google Chrome Browser, Please disable pop-ups</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
